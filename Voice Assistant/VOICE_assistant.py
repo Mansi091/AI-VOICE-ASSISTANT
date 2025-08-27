@@ -20,7 +20,7 @@ import base64
 import json
 from datetime import datetime
 
-Gemini_Api_key = "AIzaSyB_7_szCW4xVo7rdCSx6zeupn4zsffLAWA"  
+Gemini_Api_key = "your-api-key"  
 genai.configure(api_key=Gemini_Api_key)
 
 # Initialize text-to-speech engine
@@ -878,4 +878,5 @@ if __name__ == "__main__":
         app = ModernAssistantGUI()
         app.root.mainloop()
     except Exception as e:
+
         print(f"Error starting application: {str(e)}")
